@@ -1,38 +1,56 @@
+/* src/App.css */
 .App {
-  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+select, button {
+  margin: 10px;
+  padding: 5px;
+}
+/* src/App.css */
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.budget, .currency-dropdown, .department, .change-allocation {
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.department {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.department button {
+  background-color: #28a745;
   color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.department button:disabled {
+  background-color: #ccc;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.change-allocation div {
+  margin-bottom: 10px;
+}
+
+.currency-dropdown select {
+  padding: 5px;
+}
+
+.budget div, .budget button {
+  margin-bottom: 10px;
+}
+
+.budget button {
+  padding: 5px 10px;
+  cursor: pointer;
 }
